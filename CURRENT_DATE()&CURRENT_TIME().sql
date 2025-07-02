@@ -1,0 +1,18 @@
+CREATE TABLE test(
+    my_date DATE,
+    my_time TIME,
+    mydatetime DATETIME
+);
+
+SELECT * FROM test;
+
+-- ADD CURRENT_TIME() , CURRENT_DATE(), NOW()
+INSERT INTO test
+VALUES (CURRENT_DATE(), CURRENT_TIME(), NOW());
+
+-- Manipulate CURRENT_DATE()
+INSERT INTO test
+VALUES (CURRENT_DATE() + 1, NULL, NULL);
+
+INSERT INTO test
+VALUES (CURRENT_DATE() - 1, NULL, NULL);
